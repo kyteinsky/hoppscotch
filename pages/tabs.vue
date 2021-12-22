@@ -3,7 +3,7 @@
     <Pane class="flex flex-col hide-scrollbar !overflow-auto">
       <div
         class="
-          divide-primaryDark divide-x
+          divide-divider divide-x
           bg-primaryLight
           flex-1
           w-full
