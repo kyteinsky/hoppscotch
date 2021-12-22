@@ -1,7 +1,7 @@
 <div align="center">
   <a href="https://hoppscotch.io">
     <img
-      src="https://raw.githubusercontent.com/hoppscotch/hoppscotch/main/static/logo.png"
+      src="https://avatars.githubusercontent.com/u/56705483"
       alt="Hoppscotch Logo"
       height="64"
     />
@@ -36,7 +36,7 @@
   <p>
     <a href="https://hoppscotch.io">
       <img
-        src="https://tiny.cc/hoppscotch_screenshot_1"
+        src="https://raw.githubusercontent.com/hoppscotch/hoppscotch/main/packages/hoppscotch-app/static/banner.png"
         alt="Screenshot"
         width="100%"
       />
@@ -46,7 +46,7 @@
 
 #### **Support**
 
-[![Chat on Discord](https://img.shields.io/badge/chat-Discord-7289DA?logo=discord)](https://hoppscotch.io/discord) [![Chat on Telegram](https://img.shields.io/badge/chat-Telegram-2CA5E0?logo=Telegram)](https://hoppscotch.io/telegram)
+[![Chat on Discord](https://img.shields.io/badge/chat-Discord-7289DA?logo=discord)](https://hoppscotch.io/discord) [![Chat on Telegram](https://img.shields.io/badge/chat-Telegram-2CA5E0?logo=telegram)](https://hoppscotch.io/telegram) [![Discuss on GitHub](https://img.shields.io/badge/discussions-GitHub-333333?logo=github)](https://github.com/hoppscotch/hoppscotch/discussions)
 
 <details open>
   <summary><b>Table of contents</b></summary>
@@ -89,7 +89,7 @@
 - `TRACE` - Performs a message loop-back test along the path to the target resource
 - `<custom>` - Some APIs use custom request methods such as `LIST`. Type in your custom methods.
 
-🌈 **Make it yours:** Customizable combinations for background, foreground and accent colors — [customize now ✨](https://hoppscotch.io/settings).
+🌈 **Make it yours:** Customizable combinations for background, foreground and accent colors — [customize now](https://hoppscotch.io/settings).
 
 **Theming**
 
@@ -173,7 +173,7 @@ _Collections are synced with cloud / local session storage_
 
 - Hide your IP address
 - Fixes [`CORS`](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) (Cross Origin Resource Sharing) issues
-- Access APIs served in non-HTTPS `[http://]` endpoints
+- Access APIs served in non-HTTPS (`http://`) endpoints
 - Use your own Proxy URL
 
 _Official proxy server is hosted by Hoppscotch - **[GitHub](https://github.com/hoppscotch/proxyscotch)** - **[Privacy Policy](https://docs.hoppscotch.io/privacy)**_
@@ -256,9 +256,12 @@ _Add-ons are developed and maintained under **[Hoppscotch Organization](https://
 
 👨‍👩‍👧‍👦 **Teams β:** Helps you collaborate across your team to design, develop, and test APIs faster.
 
-- Unlimited team collections and shared requests
+- Unlimited teams
+- Unlimited shared collections
 - Unlimited team members
-- User roles
+- Role-based access control
+- Cloud sync
+- Multiple devices
 
 🚚 **Bulk Edit:** Edit key-value pairs in bulk.
 
@@ -290,7 +293,7 @@ _Add-ons are developed and maintained under **[Hoppscotch Organization](https://
 
 ## **Developing**
 
-0. Update [`.env.example`](https://github.com/hoppscotch/hoppscotch/blob/main/.env.example) file found in repository's root directory with your own keys and rename it to `.env`.
+0. Update [`.env.example`](https://github.com/hoppscotch/hoppscotch/blob/main/packages/hoppscotch-app/.env.example) file found in `packages/hoppscotch-app` with your own keys and rename it to `.env`.
 
 _Sample keys only works with the [production build](https://hoppscotch.io)._
 
@@ -302,9 +305,10 @@ _Sample keys only works with the [production build](https://hoppscotch.io)._
 ### Local development environment
 
 1. [Clone this repo](https://help.github.com/en/articles/cloning-a-repository) with git.
-2. Install dependencies by running `npm install` within the directory that you cloned (probably `hoppscotch`).
-3. Start the development server with `npm run dev`.
-4. Open development site by going to [`http://localhost:3000`](http://localhost:3000) in your browser.
+2. Install pnpm using npm by running `npm install -g pnpm`.
+3. Install dependencies by running `pnpm install` within the directory that you cloned (probably `hoppscotch`).
+4. Start the development server with `pnpm run dev`.
+5. Open development site by going to [`http://localhost:3000`](http://localhost:3000) in your browser.
 
 ### Docker compose
 
@@ -323,9 +327,10 @@ docker run --rm --name hoppscotch -p 3000:3000 hoppscotch/hoppscotch:latest
 ## **Releasing**
 
 1. [Clone this repo](https://help.github.com/en/articles/cloning-a-repository) with git.
-2. Install dependencies by running `npm install` within the directory that you cloned (probably `hoppscotch`).
-3. Build the release files with `npm run generate`.
-4. Find the built project in `./dist`.
+2. Install pnpm using npm by running `npm install -g pnpm`.
+3. Install dependencies by running `pnpm install` within the directory that you cloned (probably `hoppscotch`).
+4. Build the release files with `pnpm run generate`.
+5. Find the built project in `packages/hoppscotch-app/dist`.
 
 ## **Contributing**
 

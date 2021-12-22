@@ -1,6 +1,17 @@
+[build.environment]
+  NODE_VERSION = "14"
+  NPM_FLAGS = "--prefix=/dev/null"
+
 [build]
-  functions = "netlify/"
-  environment = { NODE_VERSION = "14" }
+  base = "/"
+  publish = "packages/hoppscotch-app/dist"
+  command = "npx pnpm i --store=node_modules/.pnpm-store && npx pnpm run generate"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
 
 [[redirects]]
   from = "/discord"
@@ -22,7 +33,7 @@
 
 [[redirects]]
   from = "/careers"
-  to = "https://www.notion.so/hoppscotch/3b9d5d5239a043bfb91701faabf5b8f0"
+  to = "https://company.hoppscotch.io/careers"
   status = 301
   force = true
 
@@ -35,5 +46,17 @@
 [[redirects]]
   from = "/twitter"
   to = "https://twitter.com/hoppscotch_io"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/github"
+  to = "https://github.com/hoppscotch/hoppscotch"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/announcements"
+  to = "https://company.hoppscotch.io/announcements"
   status = 301
   force = true
