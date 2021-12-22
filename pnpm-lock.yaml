@@ -163,6 +163,7 @@ importers:
       vue-jest: ^3.0.7
       vue-textarea-autosize: ^1.1.1
       vue-tippy: ^4.13.0
+      vuedraggable: ^2.24.3
       vuejs-auto-complete: ^0.9.0
       wonka: ^4.0.15
       worker-loader: ^3.0.8
@@ -235,6 +236,7 @@ importers:
       vue-github-button: 1.3.0
       vue-textarea-autosize: 1.1.1
       vue-tippy: 4.13.0
+      vuedraggable: 2.24.3
       vuejs-auto-complete: 0.9.0
       wonka: 4.0.15
       yargs-parser: 21.0.0
@@ -15462,6 +15464,10 @@ packages:
       is-plain-obj: 1.1.0
     dev: false
 
+  /sortablejs/1.10.2:
+    resolution: {integrity: sha512-YkPGufevysvfwn5rfdlGyrGjt7/CRHwvRPogD/lC+TnvcN29jDpCifKP+rBqf+LRldfXSTh+0CGLcSg0VIxq3A==}
+    dev: false
+
   /source-list-map/2.0.1:
     resolution: {integrity: sha512-qnQ7gVMxGNxsiL4lEuJwe/To8UnK7fAnmbGEEH8RpLouuKbeEm0lhbQVFIrNSuB+G7tVrAlVsZgETT5nljf+Iw==}
     dev: false
@@ -17267,6 +17273,12 @@ packages:
 
   /vue/2.6.14:
     resolution: {integrity: sha512-x2284lgYvjOMj3Za7kqzRcUSxBboHqtgRE2zlos1qWaOye5yUmHn42LB1250NJBLRwEcdrB0JRwyPTEPhfQjiQ==}
+
+  /vuedraggable/2.24.3:
+    resolution: {integrity: sha512-6/HDXi92GzB+Hcs9fC6PAAozK1RLt1ewPTLjK0anTYguXLAeySDmcnqE8IC0xa7shvSzRjQXq3/+dsZ7ETGF3g==}
+    dependencies:
+      sortablejs: 1.10.2
+    dev: false
 
   /vuejs-auto-complete/0.9.0:
     resolution: {integrity: sha512-7UV3s9bXdnsbGARhHcOuDAszGUsz7JpsFKBfHQuQvo4rfH0yQIru2Rb/x2bWU+m+VW4fS9DKDSYi6tY511QSIA==}
