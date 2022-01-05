@@ -3,6 +3,7 @@ import {
   getCurrentEnvironment,
   getGlobalVariables,
 } from "~/newstore/environments"
+import { getRESTRequest } from "~/newstore/RESTSession"
 
 export const getCombinedEnvVariables = () => {
   const variables: { key: string; value: string }[] = [...getGlobalVariables()]
@@ -26,4 +27,8 @@ export const getCombinedEnvVariables = () => {
 export const getFinalEnvsFromPreRequest = (
   script: string,
   envs: { key: string; value: string }[]
-) => runPreRequestScript(script, envs)
+) => {
+  console.log(getRESTRequest())
+  debugger
+  return runPreRequestScript(script, envs)
+}
